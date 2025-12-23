@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#2563eb", /* bright blue */
+          "background-light": "#f0f6ff",
+          "background-dark": "#0a192f",
+          accent: "#3b82f6",
+        },
+        fontFamily: {
+          display: ["Be Vietnam Pro", "sans-serif"]
+        }
+      },
+    },
+  }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background-dark font-display text-white">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 sm:px-8 md:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Innovate Inc.</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+  <nav class="hidden md:flex items-center gap-8">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="service.html">Service</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="contact.html">Contact</a>
+<a class="text-primary text-sm font-bold leading-normal" href="about.html">About Us</a>
+
+</nav>
+
+<button id="menu-btn" class="flex items-center justify-center p-2 md:hidden text-gray-900 dark:text-white">
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+
+
+
+
+
+
+</div>
+</header>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-background-dark border-b border-gray-200/80 dark:border-gray-700 px-6 py-4 space-y-3">
+      <a href="index.html" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary">Home</a>
+      <a href="service.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Service</a>
+      <a href="contact.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Contact</a>
+      <a href="about.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">About</a>
+    </div>
+
+
+
+
+<!-- HeroSection Component -->
+<div class="w-full py-20 md:py-32 text-center">
+<div class="flex flex-col gap-6 items-center">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl max-w-3xl mx-auto">Elevate Your Business with Our Expert Solutions</h1>
+<h2 class="text-base font-normal leading-normal text-gray-600 dark:text-gray-400 md:text-lg max-w-2xl mx-auto">We provide innovative and tailored services to help you achieve your business goals and stay ahead of the competition.</h2>
+</div>
+</div>
+</div>
+<!-- SectionHeader Component -->
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">Our Core Services</h2>
+<!-- Services Grid - NEW Component -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+<div class="flex flex-col gap-6 p-6 bg-white dark:bg-background-dark/50 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<p class="text-lg font-bold">Cloud Integration</p>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Seamlessly connect your systems and applications with our robust cloud integration services for maximum efficiency.</p>
+<ul class="flex flex-col gap-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Increased Efficiency</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Scalable Infrastructure</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Reduced IT Overhead</li>
+</ul>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-auto pt-4">Starting at $5,000</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-white dark:bg-background-dark/50 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+</div>
+<p class="text-lg font-bold">Data Analytics</p>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Unlock powerful insights from your data to make smarter, data-driven business decisions and drive growth.</p>
+<ul class="flex flex-col gap-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Actionable Insights</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Competitive Advantage</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Performance Tracking</li>
+</ul>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-auto pt-4">Custom Pricing</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-white dark:bg-background-dark/50 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+</div>
+<p class="text-lg font-bold">Cybersecurity Solutions</p>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Protect your valuable digital assets with our comprehensive cybersecurity services and proactive threat monitoring.</p>
+<ul class="flex flex-col gap-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Threat Prevention</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Data Protection</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Compliance Assurance</li>
+</ul>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-auto pt-4">Request a Quote</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-white dark:bg-background-dark/50 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+</div>
+<p class="text-lg font-bold">Custom Software</p>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Build tailored software solutions that fit your unique business processes and drive operational excellence.</p>
+<ul class="flex flex-col gap-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Process Automation</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Unique Functionality</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Long-term Value</li>
+</ul>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-auto pt-4">Project-Based Pricing</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-white dark:bg-background-dark/50 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-icon="design_services">design_services</span>
+</div>
+<p class="text-lg font-bold">UI/UX Design</p>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Create intuitive and beautiful user experiences that delight your customers and improve engagement.</p>
+<ul class="flex flex-col gap-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Higher User Adoption</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Increased Conversions</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Stronger Brand Loyalty</li>
+</ul>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-auto pt-4">Starting at $8,000</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-white dark:bg-background-dark/50 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-icon="manage_accounts">manage_accounts</span>
+</div>
+<p class="text-lg font-bold">IT Consulting</p>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Leverage our expertise to build a technology strategy that aligns with your business objectives and future growth.</p>
+<ul class="flex flex-col gap-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Strategic Roadmap</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Risk Management</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500 text-base">check_circle</span> Technology Optimization</li>
+</ul>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-auto pt-4">Book a Consultation</p>
+</div>
+</div>
+<!-- Footer - NEW Component -->
+<footer class="py-12 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <p class="text-sm text-slate-500 dark:text-slate-400">
+      © 2026  Company.
+    </p>
+
+    <div class="flex items-center gap-6">
+      <a class="text-slate-500 hover:text-primary transition" href="#">Twitter</a>
+      <a class="text-slate-500 hover:text-primary transition" href="#">Instagram</a>
+      <a class="text-slate-500 hover:text-primary transition" href="#">Facebook</a>
+    </div>
+
+  </div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body></html>
